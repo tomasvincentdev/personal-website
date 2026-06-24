@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Tomas Vincent</h1>
-        <p>Computing Student at the University of Portsmouth</p>
+        <p>Graduate Computing Student at the University of Portsmouth</p>
     </header>
     <nav>
         <ul>
@@ -21,8 +21,11 @@
         </ul>
     </nav>
     <footer>
-        <p>&copy; 2025 Tomas Vincent. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Tomas Vincent. All rights reserved.</p>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
